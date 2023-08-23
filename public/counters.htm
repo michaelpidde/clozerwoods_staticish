@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <title>Clozer Woods - Counters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+<main><section>
+    <h1>Counters</h1>
+    <h2>General</h2>
+    <p>Days since being a bitch: <span id="counter-bitch"></span></p>
+    <h2>Garden 2023</h2>
+    <p>Days since starting seeds: <span id="counter-seed-start"></span><br>(sweet 100, roma, parsley, Geno & sweet basil, slenderette & garden beans, rosemary, mini belle peppers)</p>
+    <p>Days since transplanting outdoors: <span id="counter-transplant"></span><br>(sans basil, rosemary, peppers)</p>
+    <p>Days since starting carrots: <span id="counter-carrots"></span><br>(Nantes half long, short & sweet)</p>
+</section>
+<script>
+const DaysSince = (/*string*/ date) => {
+    return Math.floor((Date.now() - new Date(date).getTime()) / 1000 / 60 / 60 / 24);
+};
+document.getElementById('counter-bitch').innerHTML = DaysSince('2023-07-20');
+document.getElementById('counter-seed-start').innerHTML = DaysSince('2023-04-15');
+document.getElementById('counter-transplant').innerHTML = DaysSince('2023-05-07');
+document.getElementById('counter-carrots').innerHTML = DaysSince('2023-05-08');
+</script>        <footer>
+            Module built: 2023-07-23 16:28:46 (-05:00)        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<?php
+
+$title = '- Old Technology';
+
+ob_start();
+require 'source/template/header.php';
+echo <<<HTM
+<section>
+    <h1>Macintosh Performa</h1>
+    
+    <h2>May 8, 2023</h2>
+    <p>The IDE SD card adapter worked perfectly. I jacked the 8GB card out of my camera since the 64GB that I ordered hadn't arrived by the time the adapter did. I then needed to burn some CDs for the OS and some software. I put Mac OS 8.1 on there which took about 45 minutes to install completely. I also installed CodeWarrior 9 Gold, but had some troubles right off the bat compiling a new project in C. I'll get that sorted out sometime. I may like to make some programming videos using the tools of that era. I know you can just emulate the thing, but there's some novelty in using old hardware. Can you faithfully emulate having 32MB of RAM? I don't know.</p>
+    
+    <h2>April 27, 2023</h2>
+    <p>The new drive arrived today. I needed to go grab some CD-Rs and then find a working ISO. The one that I found for Mac OS 8.0 was not bootable, but I found a working 8.1. Unfortunately the drive was not recognized, so I gave up on that. It was not much quieter anyway, and it made a clanking sound for a bit on startup every time.</p>
+    <p>The next option I'm going to try is an IDE SD card adapter which I've seen some people using on Performa's. It's $14 plus $10 for a 64GB SanDisk card, so less than the HDD, and obviously will be soundless. A bit frustrating of a setback, but not 100% unexpected.</p>
+    
+    <h2>April 23, 2023</h2>
+    <p>I have a small interest in certain pieces of what would now be considered "retro" technology. Like many people, my interest stems partly from nostalgia. To that end, I cobbled together a Macintosh Performa 6214CD from components that I found on eBay. It's very similar to the first computer that we had at home in the mid-90s which was also a Performa, though I don't remember the exact model number. These are the stats for this machine:</p>
+    <ul>
+        <li>Processor: PowerPC 603e @ 94 MHz</li>
+        <li>RAM: 32 MB</li>
+        <li>Virtual memory: 64MB</li>
+        <li>Built-in memory: 32MB</li>
+        <li>Hard Drive: Quantum Fireball 1 GB </li>
+        <li>OS: Mac OS 9.1</li>
+    </ul>
+    <p>As of today, the current issues that I have with the machine are few but prominent. First and foremost, the hard drive is incredibly loud. It works, but it makes a whirling sound like the bearings are worn or something, so it reminds sort of like sitting next to an old vending machine. I ordered a refurb IBM 14.4GB 3.5" IDE hard drive on Newegg for $30 which is overkill in size but the price was alright compared to other options. I will need to figure out how to either transfer the content of the current drive over, or else fresh reinstall whatever version of Mac OS. Aside from that, the mouse and keyboard could use a little help. The keyboard is very clean because it had a cover on it which I took off first thing. I don't need a plastic sheet that other people have been sneezing on for 25 years. A couple of the keys stick a bit when typing so you'll get duplicated characters in your document, so I'll need to open up the thing and give it a wipedown. The mouse is just an old mouse; it works, but it sticks now and then. I didn't see anything egregiously wrong with it, so the little wheels inside it might just need to be scraped of cruft. Aside from that, the machine is good and serviceable.</p>
+</section>
+HTM;
+require 'source/template/footer.php';
+ob_end_flush();
