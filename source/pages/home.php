@@ -12,6 +12,7 @@ echo <<<HTM
         <li><a href="/petz/">Petz</a></li>
         <li><a href="playlists">Playlists</a></li>
         <li><a href="macintosh-performa">Macintosh Performa</a></li>
+        <li><a href="ssl">SSL Cert Upgrade Notes</a></li>
         <li><a href="counters">Counters</a></li>
     </ul>
 </section>
